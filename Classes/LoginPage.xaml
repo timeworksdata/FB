@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FB.Classes.LoginPage"
+             BackgroundImageSource="bg.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="10" VerticalOptions="Center" Grid.Row="1" Grid.Column="0">
+
+            <StackLayout Spacing="5">
+                <Image Source="icon.png" VerticalOptions="Start"/>
+                <Label x:Name="LoginPageHeading" Text="FAMOUS BEAN" FontSize="26" TextColor="Black" HorizontalOptions="Center" />
+                <Label Text="Meal orders on the go" FontSize="Subtitle" HorizontalOptions="Center" TextColor="WhiteSmoke"/>
+
+                <StackLayout Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand" Style="{StaticResource iStackLayout}">
+                    <Image Source="emailIcon.png" />
+                    <Entry x:Name="loginEmailEntry" Placeholder="Email" Keyboard="Email" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand" Style="{StaticResource iStackLayout}">
+                    <Image Source="passwordIcon.png" />
+                    <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand" Style="{StaticResource iStackLayout}">
+                    <Button x:Name="loginButton" Text="Login" HorizontalOptions="Start" BackgroundColor="Red"/>
+                    <Button x:Name="registerButton" Text="Register" Clicked="registerButton_Clicked" HorizontalOptions="End" BackgroundColor="Green"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand" Style="{StaticResource iStackLayout}">
+                    <Label x:Name="ForgotPasswordButton" Text="Forgot password" TextColor="White" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+
+                </StackLayout>
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

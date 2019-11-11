@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FB.RegistrationPage"
+             Title="Registration">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HorizontalOptions="Center">
+                <Label x:Name="lblFirstname" Text="First Name" />
+                <Entry x:Name="txtFirstname" />
+
+                <Label x:Name="lblLastname" Text="Last Name" />
+                <Entry x:Name="txtLastname" />
+
+                <Label x:Name="lblEmail" Text="Email" />
+                <Entry x:Name="txtEmail" Keyboard="Email" />
+
+                <Label x:Name="lblPhone" Text="Phone" />
+                <Entry x:Name="txtPhone" />
+
+                <Label x:Name="lblPassword" Text="Password" />
+                <Entry x:Name="pwdPassword" IsPassword="True"/>
+
+                <Label x:Name="lblConfirmPassword" Text="Confirm Password" />
+                <Entry x:Name="pwdConfirmPassword" IsPassword="True"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="btnRegister" Text="Register" />
+                </StackLayout>
+                <Button x:Name="AlreadyRegistered" Text="Already have account? Sign In" TextColor="Blue" BackgroundColor="Transparent" Clicked="AlreadyRegistered_Clicked" />
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
